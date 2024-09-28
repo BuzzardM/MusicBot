@@ -17,7 +17,7 @@ FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
 # Copy only the built JAR file from the build stage
-COPY --from=build /build/target/JMusicBot-*.jar ./JMusicBot.jar
+COPY --from=build /build/target/JMusicBot-*-All.jar ./JMusicBot.jar
 COPY --from=build /build/scripts/docker_entrypoint.sh ./docker_entrypoint.sh
 COPY --from=build /build/example_config.txt ./config/example_config.txt
 
