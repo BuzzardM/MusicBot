@@ -7,4 +7,4 @@
 nb*.xml
 .idea/
 
-!example-config.txt
+!example_config.txt
