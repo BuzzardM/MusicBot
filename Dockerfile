@@ -19,6 +19,7 @@ WORKDIR /app
 # Copy only the built JAR file from the build stage
 COPY --from=build /build/target/JMusicBot-*.jar ./JMusicBot.jar
 COPY --from=build /build/scripts/docker-entrypoint.sh ./docker-entrypoint.sh
+COPY --from=build /build/example-config.txt ./config/example-config.txt
 
 # Set the default command to run the bot
 ENTRYPOINT ["sh", "docker-entrypoint.sh"]
