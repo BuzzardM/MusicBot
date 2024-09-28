@@ -6,4 +6,4 @@ echo ""
 # Change directory to the config folder
 cd /app/config
 
-exec java -Dnogui=true -jar /opt/jmusicbot/JMusicBot.jar
+exec java -Dnogui=true -jar app/JMusicBot.jar
